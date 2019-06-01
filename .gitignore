@@ -74,3 +74,7 @@ Icon
 Network Trash Folder
 Temporary Items
 .apdisk
+
+# Ignore graphics 
+Assets/Space Shooter Visual Assets.meta
+Assets/Space Shooter Visual Assets/
