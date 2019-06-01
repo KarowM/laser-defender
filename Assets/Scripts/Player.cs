@@ -10,6 +10,8 @@ public class Player : MonoBehaviour {
     [SerializeField] float padding = 1f;
     [SerializeField] GameObject laserPrefab;
     [SerializeField] float projectileSpeed = 20f;
+    [SerializeField] float projectileFiringPeriod = 0.1f;
+    [SerializeField] Coroutine firingCoroutine;
 
     private float xMin, xMax;
     private float yMin, yMax;
@@ -26,8 +28,18 @@ public class Player : MonoBehaviour {
 
     private void Fire() {
         if (Input.GetButtonDown("Fire1")) {
+            firingCoroutine = StartCoroutine(FireContinuously());
+        }
+        if (Input.GetButtonUp("Fire1")) {
+            StopCoroutine(firingCoroutine);
+        }
+    }
+
+    private IEnumerator FireContinuously() {
+        while (true) {
             GameObject laser = Instantiate(laserPrefab, transform.position, Quaternion.identity) as GameObject;
             laser.GetComponent<Rigidbody2D>().velocity = new Vector2(0, projectileSpeed);
+            yield return new WaitForSeconds(projectileFiringPeriod);
         }
     }
 
