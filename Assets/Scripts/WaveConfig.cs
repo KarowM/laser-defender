@@ -31,8 +31,14 @@ public class WaveConfig : ScriptableObject {
         return moveSpeed;
     }
 
-    public GameObject GetPathPrefab() {
-        return pathPrefab;
+    public List<Transform> GetWaypoints() {
+        var waveWayPoints = new List<Transform>();
+
+        foreach (Transform child in pathPrefab.transform) {
+            waveWayPoints.Add(child);
+        }
+
+        return waveWayPoints;
     }
 
 
