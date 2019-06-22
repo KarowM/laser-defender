@@ -146,7 +146,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: e8ccc8919f83a448dae621c4c7c05f00, type: 2}
   - {fileID: 11400000, guid: 7b087db12fbbf4575b2168371eac300c, type: 2}
   - {fileID: 11400000, guid: 26582ef82f13c404897bcad87a29c289, type: 2}
-  startingWave: 2
+  startingWave: 0
   isLooping: 0
 --- !u!4 &568677167
 Transform:
