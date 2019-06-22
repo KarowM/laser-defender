@@ -11,8 +11,9 @@ GameObject:
   - component: {fileID: 7290327984680324489}
   - component: {fileID: 7290327984680324488}
   - component: {fileID: 1118978333130235229}
+  - component: {fileID: 6462346826449443421}
   m_Layer: 0
-  m_Name: Enemy
+  m_Name: EnemyBrown
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -92,6 +93,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 621b4991551474f37a3bcf0633ab2d43, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waveConfig: {fileID: 11400000, guid: e8ccc8919f83a448dae621c4c7c05f00, type: 2}
   waypoints: []
-  moveSpeed: 2
+--- !u!114 &6462346826449443421
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7290327984680324491}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e26c4a8f3722d4afbb5ad93b86734cbd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 100

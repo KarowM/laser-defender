@@ -6,10 +6,15 @@ using UnityEngine;
 public class EnemySpawner : MonoBehaviour {
 
     [SerializeField] List<WaveConfig> waveConfigs;
-    [SerializeField] int startingWave = 0;
+    [SerializeField] int startingWave;
+    [SerializeField] bool isLooping;
 
-    void Start() {
-        StartCoroutine(SpawnAllWaves());
+    IEnumerator Start() {
+        do {
+            yield return StartCoroutine(SpawnAllWaves());
+        }
+        while (isLooping);
+        
     }
 
     private IEnumerator SpawnAllWaves() {

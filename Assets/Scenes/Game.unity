@@ -146,7 +146,8 @@ MonoBehaviour:
   - {fileID: 11400000, guid: e8ccc8919f83a448dae621c4c7c05f00, type: 2}
   - {fileID: 11400000, guid: 7b087db12fbbf4575b2168371eac300c, type: 2}
   - {fileID: 11400000, guid: 26582ef82f13c404897bcad87a29c289, type: 2}
-  startingWave: 0
+  startingWave: 2
+  isLooping: 0
 --- !u!4 &568677167
 Transform:
   m_ObjectHideFlags: 0
@@ -295,7 +296,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2319593590458737622
 PrefabInstance:
@@ -347,7 +348,7 @@ PrefabInstance:
     - target: {fileID: 2319593590606555303, guid: f3493c505e48f4560a6e5c5f94a1e2ac,
         type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2319593590606555303, guid: f3493c505e48f4560a6e5c5f94a1e2ac,
         type: 3}
@@ -427,7 +428,7 @@ PrefabInstance:
     - target: {fileID: 3512363485066969144, guid: 49dd7de48973342a8a8b758d618e7347,
         type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3512363485066969144, guid: 49dd7de48973342a8a8b758d618e7347,
         type: 3}
