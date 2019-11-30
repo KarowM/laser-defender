@@ -59,6 +59,7 @@ SpriteRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -108,6 +109,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 100
+  shotCounter: 0
+  minTimeBetweenShots: 0.2
+  maxTimeBetweenShots: 3
+  laserPrefab: {fileID: 3445053027125441755, guid: a1cdc999d31334ff0ac4f9b0c4ca44c3,
+    type: 3}
 --- !u!60 &9065239459514622434
 PolygonCollider2D:
   m_ObjectHideFlags: 0
