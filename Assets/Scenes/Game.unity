@@ -373,17 +373,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2319593590606555300, guid: f3493c505e48f4560a6e5c5f94a1e2ac,
-        type: 3}
-      propertyPath: laserPrefab
-      value: 
-      objectReference: {fileID: 6685944753801823046, guid: c086f62c14b7e4d5aae67f7c7e090d4a,
-        type: 3}
-    - target: {fileID: 2319593590606555300, guid: f3493c505e48f4560a6e5c5f94a1e2ac,
-        type: 3}
-      propertyPath: projectileFiringPeriod
-      value: 0.1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f3493c505e48f4560a6e5c5f94a1e2ac, type: 3}
 --- !u!1001 &3512363483762976291
