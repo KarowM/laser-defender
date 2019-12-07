@@ -112,7 +112,8 @@ MonoBehaviour:
   shotCounter: 0
   minTimeBetweenShots: 0.2
   maxTimeBetweenShots: 3
-  laserPrefab: {fileID: 0}
+  laserPrefab: {fileID: 3445053027125441755, guid: a1cdc999d31334ff0ac4f9b0c4ca44c3,
+    type: 3}
 --- !u!60 &4936253608696769227
 PolygonCollider2D:
   m_ObjectHideFlags: 0
