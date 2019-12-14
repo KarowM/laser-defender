@@ -15,6 +15,9 @@ public class Player : MonoBehaviour {
     [SerializeField] float projectileSpeed = 20f;
     [SerializeField] float projectileFiringPeriod = 0.1f;
 
+    [Header("Sounds")]
+    [SerializeField] AudioClip deathSound;
+
     [SerializeField] Coroutine firingCoroutine;
 
     private float xMin, xMax;
@@ -41,6 +44,7 @@ public class Player : MonoBehaviour {
         health -= damageDealer.GetDamage();
         damageDealer.Hit();
         if (health <= 0) {
+            AudioSource.PlayClipAtPoint(deathSound, Camera.main.transform.position, 0.1f);
             Destroy(gameObject);
         }
     }

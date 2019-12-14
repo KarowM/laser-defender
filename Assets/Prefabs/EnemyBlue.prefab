@@ -108,7 +108,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e26c4a8f3722d4afbb5ad93b86734cbd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 100
+  health: 300
   shotCounter: 0
   minTimeBetweenShots: 0.2
   maxTimeBetweenShots: 3
@@ -116,6 +116,8 @@ MonoBehaviour:
     type: 3}
   explosionPrefab: {fileID: 9152393353450756887, guid: a30a69116c35e4a0ba01ec59e62f2caa,
     type: 3}
+  deathSound: {fileID: 8300000, guid: 1204eff48cf724022bce6eac32220f80, type: 3}
+  laserSound: {fileID: 8300000, guid: 63834175a5fe64769aa32e159cc7ff32, type: 3}
 --- !u!60 &4936253608696769227
 PolygonCollider2D:
   m_ObjectHideFlags: 0
