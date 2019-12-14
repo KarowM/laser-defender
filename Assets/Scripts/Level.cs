@@ -1,5 +1,7 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 using UnityEngine.SceneManagement;
+using System.Collections;
 
 public class Level : MonoBehaviour {
 
@@ -12,7 +14,12 @@ public class Level : MonoBehaviour {
     }
 
     public void LoadGameOver() {
-        SceneManager.LoadScene("GameOver");
+        StartCoroutine(WaitAndGameOver());
+    }
+
+    IEnumerator WaitAndGameOver() {
+        yield return new WaitForSeconds(2);
+        SceneManager.LoadScene("Game Over");
     }
 
     public void QuitGame() {
