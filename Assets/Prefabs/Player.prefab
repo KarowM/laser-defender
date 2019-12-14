@@ -102,6 +102,7 @@ MonoBehaviour:
   projectileSpeed: 20
   projectileFiringPeriod: 0.1
   deathSound: {fileID: 8300000, guid: ef3071996f98d459e837baf60401c456, type: 3}
+  level: {fileID: 451158466084979377, guid: 51badb8918a124066ad74a4258199504, type: 3}
 --- !u!60 &3703645499143700781
 PolygonCollider2D:
   m_ObjectHideFlags: 0
