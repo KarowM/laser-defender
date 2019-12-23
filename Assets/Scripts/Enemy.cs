@@ -48,13 +48,14 @@ public class Enemy : MonoBehaviour {
         health -= damageDealer.GetDamage();
         damageDealer.Hit();
         if (health <= 0) {
-            AudioSource.PlayClipAtPoint(deathSound, Camera.main.transform.position, 0.1f);
-            GameObject explosion = Instantiate(
-                explosionPrefab,
-                transform.position,
-                transform.rotation);
-            Destroy(gameObject);
-            Destroy(explosion, explosionObjectLifetime);
+            Die();
         }
+    }
+
+    private void Die() {
+        Destroy(gameObject);
+        GameObject explosion = Instantiate(explosionPrefab, transform.position,transform.rotation);
+        Destroy(explosion, explosionObjectLifetime);
+        AudioSource.PlayClipAtPoint(deathSound, Camera.main.transform.position, 0.1f);
     }
 }
